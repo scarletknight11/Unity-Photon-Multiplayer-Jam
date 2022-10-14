@@ -11,4 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/MovePlayer.unity
+    guid: 695c6b17a0e9da745a31d4fb25be5275
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 16d7d8b9c1bad254da4c721153b4cb07, type: 2}

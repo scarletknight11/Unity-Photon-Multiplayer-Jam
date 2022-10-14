@@ -6,8 +6,7 @@ using UnityEngine.UI;
 using Photon.Realtime;
 using TMPro;
 
-public class CreateRoom : MonoBehaviourPunCallbacks
-{
+public class CreateRoom : MonoBehaviourPunCallbacks {
     [SerializeField]
     private TMP_Text _roomName;
 
