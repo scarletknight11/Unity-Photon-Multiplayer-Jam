@@ -9,7 +9,7 @@ public abstract class Interactable : MonoBehaviour {
     
     public void BaseInteract()
     {
-        Interact();
+        //Interact();
     }
 
     protected virtual void Interact()
@@ -17,4 +17,10 @@ public abstract class Interactable : MonoBehaviour {
         //we wont have any code written in this function
         //this is a template function to be overriden by our subclasses
     }
+
+    protected virtual void closedoor()
+    {
+
+    }
 }
+

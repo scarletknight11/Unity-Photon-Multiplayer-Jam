@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerInteract : MonoBehaviour
+public class PlayerInteract : KeyPad
 {
     private Camera cam;
     [SerializeField]
@@ -20,6 +20,7 @@ public class PlayerInteract : MonoBehaviour
         cam = GetComponent<PlayerLook>().cam;
         playerUI = GetComponent<PlayerUI>();
         inputManager = GetComponent<InputManager>();
+        key = GetComponent<KeyPad>();
     }
 
     // Update is called once per frame
@@ -39,7 +40,7 @@ public class PlayerInteract : MonoBehaviour
                 playerUI.UpdateText(interactable.promptMessage);
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    interactable.BaseInteract();
+                    key.Interaction();
                 }
             }
         }
